@@ -15,6 +15,7 @@ const express = require("express"), // express를 요청
 
 // @TODO: Lesson 26: controllers 파일의 요청 삭제
 
+
 const methodOverride = require("method-override"); // method-override 미들웨어를 요청
 app.use(
   methodOverride("_method", {
@@ -106,7 +107,6 @@ db.once("open",()=>{
   console.log("Connected to MONGODB!!");
 })
 
-
 /**
  * =====================================================================
  * Define app settings and middleware
@@ -137,24 +137,8 @@ app.use("/", router); // 라우터를 애플리케이션에 추가
  * =====================================================================
  */
 
-/**
- * Pages
- */
-/** @TODO: Home (Pages) 라우트의 homeRoutes.js로의 이동 */
 
-/** @TODO: User 라우트의 userRoutes.js로의 이동 */
 
-/** @TODO: Subscriber 라우트의 subscriberRoutes.js로의 이동 */
-
-/** @TODO: Course 라우트의 courseRoutes.js로의 이동 */
-
-/** @TODO: Train 라우트의 trainRoutes.js로의 이동 */
-
-/** @TODO: Talk 라우트의 talkRoutes.js로의 이동 */
-
-/** @TODO: Research 라우트의 researchRoutes.js로의 이동 */
-
-/** @TODO: Research 라우트의 researchRoutes.js로의 이동 */
 
 /**
  * =====================================================================
